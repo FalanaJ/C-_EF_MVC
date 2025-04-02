@@ -1,0 +1,17 @@
+﻿@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
+@model ICollection<AS_Kol_1.Models.Position>
+
+<h1>@ViewBag.Title</h1>
+
+<p>Lista pozycji gracza</p>
+
+@if(Model != null)
+{
+	foreach(var p in Model)
+	{
+		<hr class="rounded">
+		<p>@p.Name</p>
+		<hr class="rounded">
+	}
+}
+

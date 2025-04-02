@@ -1,0 +1,21 @@
+﻿@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
+@model AS_Kol_1.Models.League;
+
+<form asp-route="add" method="post">
+	<p>
+		<label asp-for="Name">Name:</label>
+		<input asp-for="Name" />
+	</p>
+
+	<p>
+		<label asp-for="Country">Country:</label>
+		<input asp-for="Country" />
+	</p>
+
+	<p>
+		<label asp-for="Level">Level:</label>
+		<input asp-for="Level" />
+	</p>
+
+	<button type="submit">Dodaj ligę</button>
+</form>

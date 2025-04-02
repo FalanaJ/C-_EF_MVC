@@ -1,0 +1,28 @@
+﻿@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
+@model AS_Kol_1.Models.Team;
+
+<form asp-route="add" method="post">
+	<p>
+		<label asp-for="Name">Name:</label>
+		<input asp-for="Name" />
+	</p>
+
+	<p>
+		<label asp-for="Country">Country:</label>
+		<input asp-for="Country" />
+	</p>
+
+	<p>
+		<label asp-for="City">City:</label>
+		<input asp-for="City" />
+	</p>
+
+	<p>
+		<label asp-for="League">League:</label>
+		<select asp-for="LeagueId" asp-items="@ViewBag.leagueList"></select>
+	</p>
+
+	<p>
+		<button type="submit">Dodaj drużynę</button>
+	</p>
+</form>

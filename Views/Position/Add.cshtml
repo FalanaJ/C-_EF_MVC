@@ -1,0 +1,11 @@
+﻿@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
+@model AS_Kol_1.Models.Position
+
+<form asp-route="add" method="post">
+	<p>
+		<label asp-for="Name">Name:</label>
+		<input asp-for="Name" />
+	</p>
+
+	<button type="submit">Dodaj pozycję</button>
+</form>

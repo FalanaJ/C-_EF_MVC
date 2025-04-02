@@ -1,0 +1,39 @@
+﻿@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
+@model AS_Kol_1.Models.Player;
+
+<form asp-route="add" method="post">
+	<p>
+		<label asp-for="FirstName">FirstName:</label>
+		<input asp-for="FirstName" />
+	</p>
+
+	<p>
+		<label asp-for="LastName">LastName:</label>
+		<input asp-for="LastName" />
+	</p>
+
+	<p>
+		<label asp-for="Country">Country:</label>
+		<input asp-for="Country" />
+	</p>
+
+	<p>
+		<label asp-for="Team">Team:</label>
+		<select asp-for="TeamId" asp-items="@ViewBag.teamsList"></select>
+	</p>
+
+	<p>
+		<label asp-for="Positions">Positions:</label>
+		@foreach (var pos in @ViewBag.Positions)
+		{
+		<p>
+			<label>@pos.Text</label>
+			<input type="checkbox" name="posi" value="@pos.Value" />
+		</p>
+		}
+	</p>
+
+	<p>
+		<button type="submit">Dodaj artykuł</button>
+	</p>
+</form>

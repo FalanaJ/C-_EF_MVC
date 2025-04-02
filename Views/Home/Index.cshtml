@@ -1,0 +1,29 @@
+﻿@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
+
+<h1>@ViewBag.Title</h1>
+
+<p>Witaj na stronie głównej</p>
+
+<p>
+	Wyświetlanie danych:
+	<ul>
+		<li><a asp-controller="article" asp-action="index">Wyświetl listę artykułów</a></li>
+		<li><a asp-controller="team" asp-action="index">Wyświetl listę drużyn</a></li>
+		<li><a asp-controller="author" asp-action="index">Wyświetl listę autorów</a></li>
+		<li><a asp-controller="league" asp-action="index">Wyświetl listę lig</a></li>
+		<li><a asp-controller="position" asp-action="index">Wyświetl listę pozycji gracza</a></li>
+		<li><a asp-controller="player" asp-action="index">Wyświetl listę graczy</a></li>
+	</ul>
+</p>
+
+<p>
+	Dodawanie rekordów:
+	<ul>
+		<li><a asp-controller="article" asp-action="add">Dodaj nowy artykuł</a></li>
+		<li><a asp-controller="author" asp-action="add">Dodaj nowego autora</a></li>
+		<li><a asp-controller="league" asp-action="add">Dodaj nową ligę</a></li>
+		<li><a asp-controller="team" asp-action="add">Dodaj nową drużynę</a></li>
+		<li><a asp-controller="position" asp-action="add">Dodaj nową pozycję gracza</a></li>
+		<li><a asp-controller="player" asp-action="add">Dodaj nowego gracza</a></li>
+	</ul>
+</p>

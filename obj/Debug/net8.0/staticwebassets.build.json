@@ -1,0 +1,19 @@
+{
+  "Version": 1,
+  "Hash": "WoTrwYzQqA30oz2hFMLSfZokUR+OTu+xm6ywCVEOCng=",
+  "Source": "AS_Kol_1",
+  "BasePath": "_content/AS_Kol_1",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [
+    {
+      "Name": "AS_Kol_1\\wwwroot",
+      "Source": "AS_Kol_1",
+      "ContentRoot": "C:\\Users\\Kubim\\OneDrive\\Pulpit\\AS_Kol_1\\AS_Kol_1\\wwwroot\\",
+      "BasePath": "_content/AS_Kol_1",
+      "Pattern": "**"
+    }
+  ],
+  "Assets": []
+}

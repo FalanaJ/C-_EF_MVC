@@ -1,0 +1,28 @@
+﻿@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
+@model ICollection<AS_Kol_1.Models.Player>
+
+<h1>@ViewBag.Title</h1>
+
+<p>Lista graczy</p>
+
+@if (Model != null)
+{
+	foreach (var a in Model)
+	{
+		<hr class="rounded">
+		<p>
+			<p>@a.LastName</p>
+			<p>@a.FirstName</p>
+			<p>@a.Country</p>
+			<p>@a.Team.Name</p>
+
+			<p>Positions:</p>
+
+			@foreach (var position in @a.Positions)
+			{
+				<p>@position.Name</p>
+			}
+		</p>
+		<hr class="rounded">
+	}
+}

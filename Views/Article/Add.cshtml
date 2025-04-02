@@ -1,0 +1,28 @@
+﻿@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
+@model AS_Kol_1.Models.Article;
+
+<form asp-route="add" method="post">
+	<p>
+		<label asp-for="Title">Title:</label>
+		<input asp-for="Title" />
+	</p>
+
+		<p>
+		<label asp-for="Lead">Lead:</label>
+		<input asp-for="Lead" />
+	</p>
+
+	<p>
+		<label asp-for="Content">Content:</label>
+		<input asp-for="Content" />
+	</p>
+
+	<p>
+		<label asp-for="Author">Author:</label>
+		<select asp-for="AuthorId" asp-items="@ViewBag.authorsList"></select>
+	</p>
+
+	<p>
+		<button type="submit">Dodaj artykuł</button>
+	</p>
+</form>
